@@ -29,10 +29,10 @@ nav ul li{
 }
 a{
     text-decoration: none;
-    color: #555;
+    color: #000000;
 }
 p{
-    color: #555;
+    color: #4b4a4b;
 }
 .container{
     max-width: 1300px;
@@ -69,10 +69,11 @@ p{
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #563434;
+    background: #000000;
+    color: white;
 }
 .header{
-    background: radial-gradient(#fff,#ffd6d6);
+    background:(#111b1d);
 }
 .header .row{
     margin-top: 70px;
@@ -385,11 +386,11 @@ th:last-child{
     padding: 50px 0;
     background: radial-gradient(#fff, #ffd6d6);
 }
-.error_message{
+.error{
     color: red;
 }
-.success_message{
-    color: green;
+.success{
+    color: rgb(55, 149, 53);
 }
 .form-container{
     background: #fff;
@@ -505,4 +506,7 @@ form a{
     .cart-info p{
         display: none;
     }
+}
+span{
+    color: red;
 }
