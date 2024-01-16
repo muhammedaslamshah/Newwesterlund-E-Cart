@@ -1,4 +1,5 @@
 {% load static %}
+
 <div class="account-page">
     <div class="container">
         <div class="row">
@@ -6,14 +7,25 @@
                 <img src="{% static "images/image1.png" %}" width="100%">
             </div>
             <div class="col-2">
+
                 {% if messages %}
-                <p>
-                    <div>
+                    <div class="message-container" >
                         {% for message in messages %}
-                        <li>{{ message }}</li>
+                        <div class="message-container" style="
+                        background: #fff;
+                        width: 300px;
+                        height: fit-content !important;
+                        position: relative;
+                        text-align: center;
+                        padding: 20px 0;
+                        margin: auto;
+                        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+                        overflow: hidden;
+                    ">
+                    <li style="list-style-type: none;" class="{{ message.tags }}">{{ message }}</li>
+                    </div>
                         {% endfor %}
                     </div>
-                </p>
                 {% endif %}
                 <div class="form-container" style="height: 450px;">
                     <div class="form-btn">
@@ -47,3 +59,8 @@
         </div>
     </div>
 </div>
+
+
+{% comment %} 
+ 
+ {% endcomment %}

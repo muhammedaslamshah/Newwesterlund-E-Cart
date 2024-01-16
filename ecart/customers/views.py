@@ -32,7 +32,9 @@ def show_account(request):
                 phone=phone,
                 address=address
             )
-            return redirect('home')
+            success_message="Sucessfully registred sussessfully"
+            messages.success(request,success_message)
+            # return redirect('home')
         except Exception as e: 
             error_message="username already exists or invalid credentials"
             # to render the message to template
