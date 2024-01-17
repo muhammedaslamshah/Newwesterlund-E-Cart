@@ -385,10 +385,10 @@ th:last-child{
     padding: 50px 0;
     background: radial-gradient(#fff, #ffd6d6);
 }
-.error_message{
+.error{
     color: red;
 }
-.success_message{
+.success{
     color: green;
 }
 .form-container{

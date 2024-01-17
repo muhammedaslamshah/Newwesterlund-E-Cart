@@ -25,5 +25,23 @@
 
     }
 </script>
+
+{% comment %} 
+if have register tag then load register else then load login tag 
+so register is a veriable its used to which tab is activated 
+
+eg:- register or login
+
+{% endcomment %}
+{% if register %}
+<script>
+    register()
+</script>
+{% else %}
+<script>
+    login()
+</script>
+{% endif %}
+
 {% endblock extra_scripts %}
 {% endblock content %}
